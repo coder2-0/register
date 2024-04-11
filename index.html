@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Registration</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>User Registration</h1>
+    <div class="confirmation">
+      <p class="information"></p>
+      <button id="switch">New Form</button>
+    </div>
+    <form id="registration-form">
+      <label for="id">ID:</label><br>
+      <input type="text" id="id" name="id" placeholder="Enter your ID" required><br>
+      <label for="fullName">Full Name:</label><br>
+      <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required><br>
+      <label for="address">Address:</label><br>
+      <input type="text" id="address" name="address" placeholder="Enter your address" required><br>
+      <label for="status">Status:</label><br>
+      <select id="status" name="status" required>
+        <option value="">Select Status</option>
+        <option value="student">Student</option>
+        <option value="staff">Staff</option>
+        <option value="volunteer">Volunteer</option>
+      </select><br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>
